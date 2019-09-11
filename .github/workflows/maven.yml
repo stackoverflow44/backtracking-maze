@@ -19,9 +19,9 @@ jobs:
       with:
         java-version: 1.8
     - name: Build 
-   #   run: mvn package --file ./MazeRunner/pom.xml
-      run: javac MazeRunner.java
+      run: mvn package --file ./MazeRunner/pom.xml
+
     - name: Run program
-   #   run: java -cp ./MazeRunner/target/MazeRunner-1.0-SNAPSHOT.jar com.project.MazeRunner
-      run: java MazeRunner
+      run: java -cp ./MazeRunner/target/MazeRunner-1.0-SNAPSHOT.jar com.project.MazeRunner
+     
 
