@@ -11,8 +11,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
-      uses: ./MazeRunner
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn package --file pom.xml
+      run: mvn package --file ./MazeRunner/pom.xml
+      run: java -cp target/MazeRunner-1.0-SNAPSHOT.jar com.project.MazeRunner
