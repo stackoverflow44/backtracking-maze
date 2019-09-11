@@ -16,4 +16,4 @@ jobs:
     - name: Build with Maven
       run: mvn package --file ./MazeRunner/pom.xml
     - name: Run program
-      run: java -cp target/MazeRunner-1.0-SNAPSHOT.jar com.project.MazeRunner
+      run: java -cp ./MazeRunner/target/MazeRunner-1.0-SNAPSHOT.jar com.project.MazeRunner
